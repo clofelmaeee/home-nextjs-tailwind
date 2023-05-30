@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-head-element */
 import { Inter } from 'next/font/google'
 import homePageData from '../../static-data/home'
 import Banner from '@/components/banner'
@@ -13,6 +14,14 @@ export default function Home({ home }) {
   console.log(home.hero.banner)
   return (
     <div className='h-screen'>
+
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+
       <div className=''>
 
         <section className='banner'>
@@ -34,14 +43,14 @@ export default function Home({ home }) {
           <Clients home={home} />
         </section>
 
-        <section className='contact-us bg-white w-full'>
-          <ContactUs home={home}/>
+        <section className='contact-us bg-white w-full py-32  px-96'>
+          <ContactUs home={home} />
         </section>
 
         <section className='contact-us bg-gray-500 w-full p-10'>
-          <Footer home={home}/>
+          <Footer home={home} />
         </section>
-        
+
       </div>
     </div>
   );
