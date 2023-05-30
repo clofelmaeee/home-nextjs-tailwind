@@ -1,19 +1,11 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
 import homePageData from '../../static-data/home'
-import { Discovery } from 'dynamoose/dist/aws/sdk'
-import SectionOne from '@/components/banner'
-import SectionTwo from '@/components/about-us'
-import SectionThree from '@/components/products'
-import SectionFour from '@/components/clients'
 import Banner from '@/components/banner'
 import AboutUs from '@/components/about-us'
 import Products from '@/components/products'
 import Clients from '@/components/clients'
 import ContactUs from '@/components/contact-us'
 import Footer from '@/components/footer'
-const inter = Inter({ subsets: ['latin'] })
 
 
 // posts will be populated at build time by getStaticProps()

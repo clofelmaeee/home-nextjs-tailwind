@@ -25,7 +25,7 @@ const ContactUs = ({ home }) => {
                     </div>
                 </div>
                 <div className="form w-full">
-                    wassap
+                    form here
                 </div>
             </div>
         </div>
