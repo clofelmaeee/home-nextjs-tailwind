@@ -1,11 +1,11 @@
 import Image from 'next/image'
-const SectionTwo = ({ home }) => {
+const AboutUs = ({ home }) => {
     return (
         <div>
 
-            <div className='mx-24 mt-12'>
+            <div className='mx-96  mt-96 mb-40'>
 
-                <div className='  pb-15'>
+                <div className='  pt-60'>
                     <div className='flex flex-rows-3 justify-center w-full'>
                         <div className='flex flex-col items-center w-full'>
                             <Image
@@ -36,20 +36,22 @@ const SectionTwo = ({ home }) => {
                         </div>
                     </div>
                 </div>
+                <div className='text-slate-600 text-3xl space-y-5'>
+                    <p className='text-lg' >
 
-                <p className='text-lg' >
-                    {home.about.text1}
-                </p>
-                <p className='text-lg pt-5' >
-                    {home.about.text2}
-                </p>
-                <p className='text-lg pt-5' >
-                    {home.about.text3}
-                </p>
+                        {home.about.text1}
+                    </p>
+                    <p className='text-lg ' >
+                        {home.about.text2}
+                    </p>
+                    <p className='text-lg ' >
+                        {home.about.text3}
+                    </p>
+                </div>
             </div>
 
         </div>
     );
 }
 
-export default SectionTwo;
+export default AboutUs;

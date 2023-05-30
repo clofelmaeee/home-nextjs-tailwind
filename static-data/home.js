@@ -1,7 +1,7 @@
 const homePageData = {
     hero: {
         banner: '/bg-img.jpg',
-        logo: '/public/logo.jpg',
+        logo: '/logo.png',
         text: '<p>We are a leading Philippine website, mobile app, and agile software development company.</p>'
     },
     about: {
@@ -26,6 +26,19 @@ const homePageData = {
     clients: {
         title:"Our Clients",
         img: '/unilab.jpg',
+    },
+    contact: {
+        title: "CONTACT US",
+        text1: "Landline",
+        text2: "Mobile",
+        text3: "Email", 
+        landline: "+63 2 8810 4356",
+        mobile1: "+63 0919 078 0760 (Smart)",
+        mobile2: "+63 0917 704 3877 (Globe)",
+        email: "sales@halcyonagile.com.ph",
+    },
+    footer: {
+
     }
 
 }

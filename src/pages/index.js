@@ -3,10 +3,16 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import homePageData from '../../static-data/home'
 import { Discovery } from 'dynamoose/dist/aws/sdk'
-import SectionOne from '@/components/SectionOne'
-import SectionTwo from '@/components/SectionTwo'
-import SectionThree from '@/components/SectionThree'
-import SectionFour from '@/components/SectionFour'
+import SectionOne from '@/components/banner'
+import SectionTwo from '@/components/about-us'
+import SectionThree from '@/components/products'
+import SectionFour from '@/components/clients'
+import Banner from '@/components/banner'
+import AboutUs from '@/components/about-us'
+import Products from '@/components/products'
+import Clients from '@/components/clients'
+import ContactUs from '@/components/contact-us'
+import Footer from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -15,23 +21,36 @@ export default function Home({ home }) {
   console.log(home.hero.banner)
   return (
     <div className='h-screen'>
-      <section>
+      <div className=''>
 
-        <div className='container'>
-          <SectionOne home={home} />
-        </div>
-      </section>
-      <section className='flex bg-white items-center'>
-        <SectionTwo home={home} />
-      </section>
+        <section className='banner'>
 
-      <section className='flex bg-gray-200 items-center w-full'>
-        <SectionThree home={home} />
-      </section>
+          <div className='container'>
+            <Banner home={home} />
+          </div>
+        </section>
 
-      <section className='flex bg-gray-200 items-center w-full'>
-        <SectionFour home={home} />
-      </section>
+        <section className='about-us flex bg-white items-center  '>
+          <AboutUs home={home} />
+        </section>
+
+        <section className='products flex bg-gray-100 items-center w-full py-40 px-96 items-center mx-0'>
+          <Products home={home} />
+        </section>
+
+        <section className='clients flex bg-white items-center w-full'>
+          <Clients home={home} />
+        </section>
+
+        <section className='contact-us bg-white w-full'>
+          <ContactUs home={home}/>
+        </section>
+
+        <section className='contact-us bg-gray-500 w-full p-10'>
+          <Footer home={home}/>
+        </section>
+        
+      </div>
     </div>
   );
 }

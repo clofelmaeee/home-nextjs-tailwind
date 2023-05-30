@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-const SectionOne = ({home}) => {
+const Banner= ({ home }) => {
     return (
         <div>
             <div className='container'>
@@ -9,20 +9,20 @@ const SectionOne = ({home}) => {
                 <div className='w-full'>
                     <Image
                         src={home.hero.banner}
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }}
+                        fill
+                        // sizes="100vw"
+                        //  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt="Banner"
                     />
                     <Image
                         src={home.hero.logo}
-                        width={0}
-                        height={0}
+                        width={369}
+                        height={117}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }}
+                        // style={{ width: '100%', height: 'auto' }}
                         alt="Banner"
                     />
+
 
                 </div>
             </div>
@@ -30,5 +30,5 @@ const SectionOne = ({home}) => {
     );
 }
 
-export default SectionOne;
+export default Banner;
 
