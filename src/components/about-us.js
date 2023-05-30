@@ -1,56 +1,50 @@
 import Image from 'next/image'
 const AboutUs = ({ home }) => {
     return (
-        <div>
-
-            <div className='mx-96  mt-96 mb-40'>
-
-                <div className='  pt-60'>
-                    <div className='flex flex-rows-3 justify-center w-full'>
-                        <div className='flex flex-col items-center w-full'>
-                            <Image
-                                src={home.about.imgOne}
-                                width={89}
-                                height={89}
-                                alt="Banner"
-                            />
-                            {home.about.textOne}
+        <section className='container mx-auto py-[100px]'>
+            <div className='flex mx-auto'>
+                {home.about.items.map((item, index) => (
+                        <div className="item flex justify-center flex-col items-center col-4 w-full max-w-[33.33%] " key={index}>
+                            <Image src={item.image} width={89} height={89} alt="logo"/>
+                            <p className='font-bold text-[60px] mt-[20px] text-[#55616d]'>{item.number}</p>
+                            <h2 className='font-bold text-[18px] mt-[20px] text-[#55616d]'>{item.text} </h2>
                         </div>
-                        <div className='flex flex-col items-center w-full'>
-                            <Image
-                                src={home.about.imgTwo}
-                                width={89}
-                                height={89}
-                                alt="Banner"
-                            />
-                            {home.about.textTwo}
-                        </div>
-                        <div className='flex flex-col items-center w-full'>
-                            <Image
-                                src={home.about.imgThree}
-                                width={89}
-                                height={89}
-                                alt="Banner"
-                            />
-                            {home.about.textThree}
-                        </div>
-                    </div>
+                    ))}
                 </div>
-                <div className='text-slate-600 text-3xl space-y-5'>
-                    <p className='text-lg' >
+                <div className='mt-[50px] text-slate-600 text-[20px] space-y-5 ' dangerouslySetInnerHTML={{ __html: home.about.description }} />
+        </section>
 
-                        {home.about.text1}
-                    </p>
-                    <p className='text-lg ' >
-                        {home.about.text2}
-                    </p>
-                    <p className='text-lg ' >
-                        {home.about.text3}
-                    </p>
-                </div>
-            </div>
 
-        </div>
+        // <section class="block block-about">
+        //     <div class="container">
+        //         <h2 class="text-black text-[30px]">
+        //             Block Title
+        //         </h2>
+        //         <div class="block-image">
+        //             <img src="" />
+        //         </div>
+        //         <div class="block-description">
+        //             test
+        //         </div>
+        //         <div class="block-rm">
+        //             <a href="">Read More</a>
+        //         </div>
+
+
+        //         <div class="items">
+        //             <div class="item">
+        //                 <h3 class="item-title">
+        //                     Item 1
+        //                 </h3>
+                        
+        //             </div>
+
+
+        //         </div>
+        //     </div>
+        // </section>
+
+
     );
 }
 

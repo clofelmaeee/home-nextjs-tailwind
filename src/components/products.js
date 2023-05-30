@@ -1,49 +1,24 @@
 import Image from 'next/image'
 const Products = ({ home }) => {
+    console.log(home.products)
     return (
-        <div className='w-full'>
-            <div className='w-full'>
-                <div className='flex flex-rows-3 gap-5 justify-center w-full'>
-
-                    <div className='flex flex-col items-center p-8 bg-white shadow w-full'>
+        <section className='p-[100px] bg-[#f2f2f2]'>
+            <div className='flex space-x-8 mx-auto justify-center'>
+                {home.products.items.map((item, index) => (
+                    <div key={index} className="item bg-white shadow-xl p-[30px] max-w-[350px] mx-h-[352px] ">
                         <Image
-                            src={home.products.imgOne}
-                            width={300}
-                            height={300}
+                            src={item.image}
+                            width={289.95}
+                            height={223.42}
                             alt="Banner"
+                            className=''
                         />
-                        <p className='mt-8 text-center'>
-                            {home.products.text1}
-                        </p>
-
+                        <h2 className='text-center text-[20px] mt-[20px] r text-[#55616d]'>{item.title}</h2>
                     </div>
-                    <div className='flex flex-col items-center p-5 bg-white shadow w-full'>
-                        <Image
-                            src={home.products.imgTwo}
-                            width={300}
-                            height={300}
-                            alt="Banner"
-                        />
-                        <p className='mt-8 text-center'>
-
-                            {home.products.text2}
-                        </p>
-                    </div>
-                    <div className='flex flex-col items-center p-5 bg-white shadow w-full'>
-                        <Image
-                            src={home.products.imgThree}
-                            width={300}
-                            height={300}
-                            alt="Banner"
-                        />
-                        <p className='mt-8 text-center'>
-
-                            {home.products.text3}
-                        </p>
-                    </div>
-                </div>
+                ))}
             </div>
-        </div>
+        </section>
+
     );
 }
 

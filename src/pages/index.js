@@ -11,45 +11,34 @@ import Footer from '@/components/footer'
 
 // posts will be populated at build time by getStaticProps()
 export default function Home({ home }) {
-  console.log(home.hero.banner)
+  
   return (
     <div className='h-screen'>
 
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-      </head>
+    {/* {home.blocks.map((block, index) => 
+         {if (block.blockType === 'carousel') {
+         
+        }}
+        block.blockType === 'carousel' ? <h1 key={index}>Hello</h1> :  <h2 key={index}>Hi</h2>
+    )} */}
 
       <div className=''>
 
-        <section className='banner'>
+          <Banner home={home} />
 
-          <div className='container'>
-            <Banner home={home} />
-          </div>
-        </section>
-
-        <section className='about-us flex bg-white items-center  '>
           <AboutUs home={home} />
-        </section>
 
-        <section className='products flex bg-gray-100 items-center w-full py-40 px-96 items-center mx-0'>
           <Products home={home} />
-        </section>
-
-        <section className='clients flex bg-white items-center w-full'>
+  
           <Clients home={home} />
-        </section>
-
-        <section className='contact-us bg-white w-full py-32  px-96'>
+       
+     {/*   <section className='contact-us bg-white w-full py-32  px-96'>
           <ContactUs home={home} />
         </section>
 
         <section className='contact-us bg-gray-500 w-full p-10'>
           <Footer home={home} />
-        </section>
+        </section> */}
 
       </div>
     </div>
