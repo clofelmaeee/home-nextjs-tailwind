@@ -30,7 +30,7 @@ export default function Home({ home }) {
 
           <Products home={home} />
   
-          <Clients home={home} />
+          <Clients clients={home.clients} />
        
      {/*   <section className='contact-us bg-white w-full py-32  px-96'>
           <ContactUs home={home} />

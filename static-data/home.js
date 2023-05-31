@@ -57,32 +57,94 @@ const homePageData = {
         description: "<p>As a website design company, we use a wide range of technologies to cater to small, medium, corporate, and government websites. Our expertise in building websites is vast and includes the building of marketplace websites, online food ordering websites, eCommerce and online store websites, and hotel websites, to mention a few. We can build any type of mobile application to go with your website.</p><p>As a software development company, we are one of the Philippines' foremost agile software innovators and application designers. We can build any software system exactly to your specifications. Our experience includes building Software as a Service (SaaS) systems, warehousing and inventory software, online booking systems, courier service mobile apps, golf course management systems with staff and player mobile apps, insurance broker software, and many more. Our team of business analysts can assist in the scoping of your requirements using the Domain Driven Design approach, while our system's architects can convert this into a process flow for our software developers to build.</p><p>We have design centers in Mandaluyong (Manila), and Cordova (Cebu).</p>",
     },
     products: {
-        items:[{
-            image:'/p1.jpeg',
-            title:'Enterprise Resource Planning (ERP) Software Development'
+        items: [{
+            image: '/p1.jpeg',
+            title: 'Enterprise Resource Planning (ERP) Software Development'
         },
         {
-            image:'/p2.jpeg',
-            title:'Mobile Applications for Android and iOS'
+            image: '/p2.jpeg',
+            title: 'Mobile Applications for Android and iOS'
         },
         {
-            image:'/p3.jpeg',
-            title:'Portfolio & eCommerce Websites and Systems'
+            image: '/p3.jpeg',
+            title: 'Portfolio & eCommerce Websites and Systems'
         }
-    
-    ]
+
+        ]
 
     },
+    clients: [
+        {
+            slide: [{
+                image: '/client-1.jpg'
+            },
+            {
+                image: '/client-2.png'
+            },
+            {
+                image: '/client-3.png'
+            },
+            {
+                image: '/client-1.jpg'
+            },
+            {
+                image: '/client-2.png'
+            },
+            {
+                image: '/client-3.png'
+            }
+            ]
+        },
+        {
+            slide: [{
+                image: '/client-4.png'
+            },
+            {
+                image: '/client-5.png'
+            },
+            {
+                image: '/client-6.png'
+            },
+            {
+                image: '/client-4.png'
+            },
+            {
+                image: '/client-5.png'
+            },
+            {
+                image: '/client-6.png'
+            }
+            ]
+        },
+        {
+            slide: [{
+                image: '/client-7.png'
+            },
+            {
+                image: '/client-8.png'
+            },
+            {
+                image: '/client-9.png'
+            },
+            {
+                image: '/client-7.png'
+            },
+            {
+                image: '/client-8.png'
+            },
+            {
+                image: '/client-9.png'
+            }
+            ]
+        },
 
-    clients: {
-        title:"Our Clients",
-        img: '/unilab.jpg',
-    },
+    ],
+
     contact: {
         title: "CONTACT US",
         text1: "Landline",
         text2: "Mobile",
-        text3: "Email", 
+        text3: "Email",
         landline: "+63 2 8810 4356",
         mobile1: "+63 0919 078 0760 (Smart)",
         mobile2: "+63 0917 704 3877 (Globe)",

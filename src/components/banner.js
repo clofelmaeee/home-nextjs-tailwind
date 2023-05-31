@@ -6,8 +6,7 @@ const Banner= ({ home }) => {
         <section className='block-homepage-banner'>
                 <Image
                     src={home.hero.banner}
-                    // sizes="100vw"
-                    //  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    // style={{ width: 'auto', height: 'auto' }}
                     width={1905}
                     height={935}
                     alt="Banner"
