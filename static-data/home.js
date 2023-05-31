@@ -161,7 +161,7 @@ const homePageData = {
                 image: '/client-8.png'
             },
             {
-                image: '/client-3.png'
+                image: '/client-3.jpg'
             },
             {
                 image: '/client-7.png'
