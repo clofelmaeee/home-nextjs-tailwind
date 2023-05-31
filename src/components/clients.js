@@ -12,9 +12,11 @@ const Clients = ({ clients }) => {
         <section className='p-[100px]'>
             <div className="container mx-auto max-w-[1140px]">
                 <h2 className="block-title text-[#0399d5] text-[42px] mb-[30px] text-center font-bold">Our Clients</h2>
-                <div className='items grid grid-cols-6 space-y-5 justify-center duration-1000 max-h-[260px] '>
+                <div className='items grid grid-cols-6 space-y-5 justify-self-center items-center h-[260px] transition-transform ease-in duration-500'
+                // style={{ transform: `translateX(-${currentIndex * 100}%)`}}
+                >
                     {clients[currentIndex].slide.map((item, index) => (
-                        <div key={index} className="item max-w-[185px] max-h-[260px] m-auto">
+                        <div key={index} className="item max-w-[185px] ] m-auto relative">
                             <Image
                                 src={item.image}
                                 width={100}

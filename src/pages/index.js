@@ -6,7 +6,6 @@ import AboutUs from '@/components/about-us'
 import Products from '@/components/products'
 import Clients from '@/components/clients'
 import ContactUs from '@/components/contact-us'
-import Footer from '@/components/footer'
 import Head from 'next/head'
 
 
@@ -15,12 +14,13 @@ export default function Home({ home }) {
 
   return (
     <div className='h-screen'>
+      {/* testing next/head to see SEO's result is */}
       <Head>
-        <title>Blog</title>
+        <title>Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name='description' content='Programming Articles' />
       </Head>
-      <main></main>
+      
       {/* {home.blocks.map((block, index) => 
          {if (block.blockType === 'carousel') {
          
@@ -38,13 +38,8 @@ export default function Home({ home }) {
 
         <Clients clients={home.clients} />
 
-        <ContactUs contact={home.contact} />
-
-
-        {/*   <section className='contact-us bg-gray-500 w-full p-10'>
-          <Footer home={home} />
-        </section> */}
-
+        <ContactUs contact={home.contact} form={home.form} />
+        
       </div>
     </div>
   );
