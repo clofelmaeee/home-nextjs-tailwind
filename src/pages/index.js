@@ -7,29 +7,16 @@ import Products from '@/components/products'
 import Clients from '@/components/clients'
 import ContactUs from '@/components/contact-us'
 import Head from 'next/head'
+import Footer from '@/components/footer'
+
 
 
 // posts will be populated at build time by getStaticProps()
-export default function Home({ home }) {
+export default function Home({ home, footerData }) {
 
+  // console.log(footerData)
   return (
-    <div className='h-screen'>
-      {/* testing next/head to see SEO's result is */}
-      <Head>
-        <title>Home</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name='description' content='Programming Articles' />
-      </Head>
-      
-      {/* {home.blocks.map((block, index) => 
-         {if (block.blockType === 'carousel') {
-         
-        }}
-        block.blockType === 'carousel' ? <h1 key={index}>Hello</h1> :  <h2 key={index}>Hi</h2>
-    )} */}
-
-      <div className=''>
-
+      <>
         <Banner home={home} />
 
         <AboutUs home={home} />
@@ -39,9 +26,7 @@ export default function Home({ home }) {
         <Clients clients={home.clients} />
 
         <ContactUs contact={home.contact} form={home.form} />
-        
-      </div>
-    </div>
+      </>
   );
 }
 export async function getStaticProps() {

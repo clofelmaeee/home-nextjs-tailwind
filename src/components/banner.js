@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Banner= ({ home }) => {
     return (
-        <section className='block-homepage-banner'>
+        <section className='block-homepage-banner '>
                 <Image
                     src={home.hero.banner}
                     // style={{ width: 'auto', height: 'auto' }}

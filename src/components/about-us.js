@@ -13,38 +13,6 @@ const AboutUs = ({ home }) => {
                 </div>
                 <div className='mt-[50px] text-slate-600 text-[20px] space-y-5 ' dangerouslySetInnerHTML={{ __html: home.about.description }} />
         </section>
-
-
-        // <section class="block block-about">
-        //     <div class="container">
-        //         <h2 class="text-black text-[30px]">
-        //             Block Title
-        //         </h2>
-        //         <div class="block-image">
-        //             <img src="" />
-        //         </div>
-        //         <div class="block-description">
-        //             test
-        //         </div>
-        //         <div class="block-rm">
-        //             <a href="">Read More</a>
-        //         </div>
-
-
-        //         <div class="items">
-        //             <div class="item">
-        //                 <h3 class="item-title">
-        //                     Item 1
-        //                 </h3>
-                        
-        //             </div>
-
-
-        //         </div>
-        //     </div>
-        // </section>
-
-
     );
 }
 

@@ -25,3 +25,31 @@
     )
     rgb(var(--background-start-rgb));
 } */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+
+.header.hide {
+  visibility: hidden;
+  transition: all ease .3s;
+  transform: translateY(-100%); 
+}
+
+.header.transparent img {
+  display: none;
+}
+
+.header.show {
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  visibility: inherit;
+  transition: all ease .3s;
+  transform: translateY(0); 
+}

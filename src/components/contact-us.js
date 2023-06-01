@@ -31,7 +31,7 @@ const ContactUs = ({ contact, form }) => {
                         />
                         <TextField
                             variant="standard"
-                            label="Name"
+                            label="Email"
                             required
                         />
                     </div>
@@ -39,19 +39,47 @@ const ContactUs = ({ contact, form }) => {
 
                         <TextField
                             variant="standard"
-                            label="Name"
+                            label="Country/State"
                             required
                         />
                         <TextField
                             variant="standard"
-                            label="Name"
-                            required
+                            label="Phone Number"
+
                         />
+                    </div >
+                    <div className="flex mx-auto  w-full space-x-12 ">
+                        <div className="flex flex-col ">
+                            <p>Preffered Call Time</p>
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                        </div>
+                        <div className="flex flex-col mx-auto">
+                            <p>Preffered Call Time</p>
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                            <Checkbox
+                                label="Morning"
+                            />
+                            {/* <label>Morning</label> */}
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox"/>
-                    </div>
-                   
                 </div>
             </div>
         </section>
