@@ -53,3 +53,7 @@
   transition: all ease .3s;
   transform: translateY(0); 
 }
+.slick-slide{
+  height: 260px;
+  border: 1px red;
+}

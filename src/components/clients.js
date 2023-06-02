@@ -1,44 +1,44 @@
+import Slider from "react-slick";
 import Image from 'next/image'
-import { useState } from 'react';
-import { RxDotFilled } from 'react-icons/rx'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import {GoDotFill} from "react-icons/go"
+
 
 const Clients = ({ clients }) => {
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const settings = {
+        rows: 2,
+		dots: true,
+		arrows: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 6,
+		slidesToScroll: 6
+        
+    };
 
-    const goToSlide = (index) => {
-        setCurrentIndex(index);
-    }
     return (
-        <section className='p-[100px]'>
-            <div className="container mx-auto max-w-[1140px]">
+        <section className='block-clients slider-wrapper p-[100px]'>
+            <div className="container mx-auto  max-w-[1140px]">
                 <h2 className="block-title text-[#0399d5] text-[42px] mb-[30px] text-center font-bold">Our Clients</h2>
-                <div className='items grid grid-cols-6 space-y-5 justify-self-center items-center h-[260px] transition-transform ease-in duration-500'
-                // style={{ transform: `translateX(-${currentIndex * 100}%)`}}
-                >
-                    {clients[currentIndex].slide.map((item, index) => (
-                        <div key={index} className="item max-w-[185px] ] m-auto relative">
-                            <Image
-                                src={item.image}
-                                width={100}
-                                height={100}
-                                style={{ width: 'auto', height: 'auto' }}
-                                alt="Halcyon Client"
-                                className=''
-                            />
-                        </div>
-                    )
-                    )}
-
+                <div className="flex flex-col w-full ">
+                        <Slider {...settings} >
+                            {clients.map((client, index) =>
+                                <div key={index} className="image-wrapper flex  justify-center " style={{height: 'auto', width:'auto'}}>
+                                        <Image
+                                            src={client.image}
+                                            alt="Halcyon Client"
+                                            width={100}
+                                            height={200}
+                                            className="flex self-center"
+                                        />
+                                  
+                                </div>
+                            )}
+                        </Slider>
+                    </div>
                 </div>
-                <div className={`block-btns flex justify-center text-5xl p-2 text-[#d2d2d2] cursor-pointer `}>
-                    {clients.map((slide, slideIndex) => (
-                        <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={`${slideIndex === slideIndex ? " text-[#0399d5]" : "text-[#0399d5]  "}`}>
-                            <RxDotFilled />
-                        </div>
-                    ))}
-
-                </div>
-            </div>
+            
         </section>
     );
 }

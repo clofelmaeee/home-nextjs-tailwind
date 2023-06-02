@@ -74,125 +74,117 @@ const homePageData = {
 
     },
     clients: [
-        {
 
-            slide: [{
-                image: '/client-1.jpg'
-            },
-            {
-                image: '/client-2.png'
-            },
-            {
-                image: '/client-3.png'
-            },
-            {
-                image: '/client-1.jpg'
-            },
-            {
-                image: '/client-2.png'
-            },
-            {
-                image: '/client-3.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            }
-            ]
+        {
+            image: '/client-1.jpg'
         },
         {
-            slide: [{
-                image: '/client-4.png'
-            },
-            {
-                image: '/client-5.png'
-            },
-            {
-                image: '/client-6.png'
-            },
-            {
-                image: '/client-4.png'
-            },
-            {
-                image: '/client-5.png'
-            },
-            {
-                image: '/client-6.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            }
-            ]
+            image: '/client-2.png'
         },
         {
-            slide: [{
-                image: '/client-7.png'
-            },
-            {
-                image: '/client-8.png'
-            },
-            {
-                image: '/client-3.png'
-            },
-            {
-                image: '/client-7.png'
-            },
-            {
-                image: '/client-8.png'
-            },
-            {
-                image: '/client-9.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            },
-            {
-                image: '/client-10.png'
-            },
-            {
-                image: '/client-11.png'
-            },
-            {
-                image: '/client-12.png'
-            }
-            ]
+            image: '/client-3.png'
+        },
+        {
+            image: '/client-1.jpg'
+        },
+        {
+            image: '/client-2.png'
+        },
+        {
+            image: '/client-3.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
+        },
+        {
+            image: '/client-4.png'
+        },
+        {
+            image: '/client-5.png'
+        },
+        {
+            image: '/client-6.png'
+        },
+        {
+            image: '/client-4.png'
+        },
+        {
+            image: '/client-5.png'
+        },
+        {
+            image: '/client-6.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
         },
 
+
+        {
+            image: '/client-7.png'
+        },
+        {
+            image: '/client-8.png'
+        },
+        {
+            image: '/client-3.png'
+        },
+        {
+            image: '/client-7.png'
+        },
+        {
+            image: '/client-8.png'
+        },
+        {
+            image: '/client-9.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
+        },
+        {
+            image: '/client-10.png'
+        },
+        {
+            image: '/client-11.png'
+        },
+        {
+            image: '/client-12.png'
+        }
     ],
 
     contact: [

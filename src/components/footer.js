@@ -1,8 +1,8 @@
 
 const Footer = () => {
     return (
-      <footer className="flex-shrink-0">
-        <div className="w-full bg-[#626262] p-[50px]">
+      <footer className="footer p-[50px] w-full bg-[#626262] ">
+        <div className="">
           Hello footer
         </div>
       </footer>

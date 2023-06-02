@@ -2,7 +2,7 @@ import { Checkbox, TextareaAutosize, TextField } from "@mui/material";
 
 const ContactUs = ({ contact, form }) => {
     return (
-        <section className="mx-auto py-[100px]">
+        <section className="block-contact-us py-[100px] mx-auto ">
             <div className="container mx-auto flex">
                 <div className="content-1 mx-auto  justify-center">
                     <h2 className="title text-[#0399d5] text-[42px] font-bold mb-[8px]">CONTACT US</h2>
@@ -11,7 +11,6 @@ const ContactUs = ({ contact, form }) => {
                             {contacts.items.map((item, itemIndex) => (
                                 <div key={itemIndex} className=" text-[#55616d] text-[22px] mb-[25px]">
                                     <h3 >{item.title}</h3>
-
                                     <p >{item.landline}</p>
                                     <p className=""> {item.smart}</p>
                                     <p > {item.globe}</p>

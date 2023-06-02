@@ -3,7 +3,7 @@ import Header from '@/components/header'
 import '@/styles/globals.css'
 import Head from 'next/head'
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, header }) {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -11,8 +11,8 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name='description' content='Programming Articles' />
       </Head>
-      <Header />
-      <main className="flex-grow">
+      <Header menus={header} />
+      <main className="main">
         <Component {...pageProps} />
       </main>
       <Footer />
