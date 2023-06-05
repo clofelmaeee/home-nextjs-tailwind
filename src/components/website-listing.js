@@ -6,7 +6,7 @@ const WebsiteListing = () => {
         <div className="website-listing">
             <div>
                 <div>
-                    {servicesData.websites.map((website, index) => (
+                    {servicesData?.websites?.map((website, index) => (
                         <div key={index}>
                             {website.image}
                         </div>
