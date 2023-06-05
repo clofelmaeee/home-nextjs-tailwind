@@ -57,3 +57,32 @@
   height: 260px;
   border: 1px red;
 }
+.page-header::before {
+  content: '';
+  top: -100px;
+  left: 0;
+  width: 350px;
+  height: 10px;
+  display: inline-block;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../public/laptop.png");
+}
+.page-header::after {
+  content: '';
+  top: -50px;
+  right: 0;
+  width: 200px;
+  height: 10px;
+  display: inline-block;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../public/mobile.png");
+}
+.app-software-page-header{
+  background-image: url("../../public/erp.jpg");
+  max-width: auto;
+  min-height: auto;
+}

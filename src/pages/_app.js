@@ -12,7 +12,7 @@ export default function App({ Component, pageProps, header }) {
         <meta name='description' content='Programming Articles' />
       </Head>
       <Header menus={header} />
-      <main className="main">
+      <main className="main flex flex-col">
         <Component {...pageProps} />
       </main>
       <Footer />

@@ -7,7 +7,6 @@ import ContactUs from '@/components/contact-us'
 
 export default function Home({ home }) {
 
-
   return (
       <>
         <Banner home={home} />

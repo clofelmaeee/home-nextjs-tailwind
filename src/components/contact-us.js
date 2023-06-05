@@ -3,8 +3,8 @@ import { Checkbox, TextareaAutosize, TextField } from "@mui/material";
 const ContactUs = ({ contact, form }) => {
     return (
         <section className="block-contact-us py-[100px] mx-auto ">
-            <div className="container mx-auto flex">
-                <div className="content-1 mx-auto  justify-center">
+            <div className="container mx-auto flex space-x-8">
+                <div className="content-1 mx-auto  justify-center px-[90px]">
                     <h2 className="title text-[#0399d5] text-[42px] font-bold mb-[8px]">CONTACT US</h2>
                     {contact.map((contacts, index) => (
                         <div key={index} className="">

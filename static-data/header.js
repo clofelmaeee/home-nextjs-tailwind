@@ -6,14 +6,14 @@ const headerData = [
 
     },
     {
-        title: <Link href="#">Websites</Link>
+        title: <Link href="/websites">Websites</Link>
     },
     {
-        title: <Link href="#">Apps and Softwares</Link>
+        title: <Link href="/apps-software">Apps and Softwares</Link>
 
     },
     {
-        title: <Link href="#">Capabilities</Link>
+        title: <Link href="/capabilities">Capabilities</Link>
     },
     {
         title: "Contact",
