@@ -2,6 +2,7 @@ import Image from "next/image";
 import servicesData from "../../static-data/website-services";
 
 const WebsiteListing = () => {
+    console.log(servicesData.websites)
     return (
         <div className="website-listing">
             <div>
