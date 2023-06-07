@@ -3,14 +3,7 @@ import Image from 'next/image'
 
 const Banner= ({ home }) => {
     return (
-        <section className='block-banner'>
-                <Image
-                    src={home.hero.banner}
-                    // style={{ width: 'auto', height: 'auto' }}
-                    width={1905}
-                    height={935}
-                    alt="Banner"
-                />
+        <section className='block-banner h-screen custom-img bg-cover bg-center'>
                 <div className='container py-[100px] absolute left-[150px] right-[0] top-[0] '>
                     <Image
                         src={home.hero.logo}

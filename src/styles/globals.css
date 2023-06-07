@@ -57,7 +57,7 @@
   height: 260px;
   border: 1px red;
 }
-.page-header::before {
+/* .page-header::before {
   content: '';
   top: -100px;
   left: 0;
@@ -68,8 +68,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../public/laptop.png");
-}
-.page-header::after {
+} */
+/* .page-header::after {
   content: '';
   top: -50px;
   right: 0;
@@ -80,9 +80,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../public/mobile.png");
-}
+}*/
 .app-software-page-header{
   background-image: url("../../public/erp.jpg");
   max-width: auto;
   min-height: auto;
+} 
+
+.custom-img {
+  background-image: url(/bg-img.jpg);
 }

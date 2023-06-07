@@ -67,39 +67,50 @@ const servicesData = [
         }]
     },
     {
-        websites:[
+        websites: [
             {
-                image: <Image src="/wingzone-01_1.png" alt="Wingzone" width={875} height={478}/>
-            
+                image: <div className="relative overflow-hidden"><Image src="/wingzone.jpg" alt="Wingzone" width={875} height={478} title="test" />
+                    <div className="absolute h-full w-full bg-black/20 flex items-center -bottom-10 ">
+
+                    </div>
+                </div>
+
             },
             {
-                image: <Image src="/viva.jpg" alt="Viva" width={875} height={553}/>
+                image: <Image src="/viva.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image:  <Image src="/filinvest-city.jpg" alt="Viva" width={875} height={553}/>
-                
+                image: <Image src="/filinvest-city.jpg" alt="Viva" width={875} height={553} />
+
             },
-            // {
-            //     image: "/island-property.jpg"
-            // },
-            // {
-            //     image: "/thered.jpg"
-            // },
-            // {
-            //     image: "quest-clark.jpg"
-            // },
-            // {
-            //     image: "/katre.jpg"
-            // },
-            // {
-            //     image: "/saffron.jpg"
-            // },
-            // {
-            //     image: "/papermoon.jpg"
-            // },
-            // {
-            //     image: "/smitten.jpg"
-            // },
+            {
+                image: <Image src="/island-property.jpg" alt="Viva" width={875} height={445} />
+
+            },
+            {
+                image: <Image src="/thered.jpg" alt="Viva" width={875} height={463} />
+
+            },
+            {
+                image: <Image src="/quest-clark.jpg" alt="Viva" width={875} height={444} />
+
+            },
+            {
+                image: <Image src="/katre.jpg" alt="Viva" width={875} height={470} />
+
+            },
+            {
+                image: <Image src="/saffron.jpg" alt="Viva" width={875} height={228} />
+
+            },
+            {
+                image: <Image src="/papermoon.jpg" alt="Viva" width={875} height={553} />
+
+            },
+            {
+                image: <Image src="/smitten.jpg" alt="Viva" width={875} height={553} />
+
+            },
             // {
             //     image: "/spigen.png"
             // },
