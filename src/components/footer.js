@@ -5,7 +5,7 @@ const Footer = () => {
 console.log
   return (
     <footer className="footer p-[40px] w-full bg-[#626262] ">
-      <div className="flex flex-col-4  text-[#d8d8d8] text-[18px] space-x-8 justify-center">
+      <div className=" text-[#d8d8d8] text-[18px] space-x-8 justify-center md:flex sm:block">
         <ul className="px-[30px] space-y-4">
           {footerData.menu1.map((item, index) => (
             <li key={index}>

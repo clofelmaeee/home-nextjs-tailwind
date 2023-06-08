@@ -81,81 +81,73 @@ const servicesData = [
             },
             {
                 image: <Image src="/filinvest-city.jpg" alt="Viva" width={875} height={553} />
-
             },
             {
                 image: <Image src="/island-property.jpg" alt="Viva" width={875} height={445} />
-
             },
             {
                 image: <Image src="/thered.jpg" alt="Viva" width={875} height={463} />
-
             },
             {
                 image: <Image src="/quest-clark.jpg" alt="Viva" width={875} height={444} />
-
             },
             {
                 image: <Image src="/katre.jpg" alt="Viva" width={875} height={470} />
-
             },
             {
                 image: <Image src="/saffron.jpg" alt="Viva" width={875} height={228} />
-
             },
             {
                 image: <Image src="/papermoon.jpg" alt="Viva" width={875} height={553} />
-
             },
             {
                 image: <Image src="/smitten.jpg" alt="Viva" width={875} height={553} />
-
             },
-            // {
-            //     image: "/spigen.png"
-            // },
-            // {
-            //     image: "/filinvest.jpg"
-            // },
-            // {
-            //     image: "/nexen.jpg"
-            // },
-            // {
-            //     image: "/vj7.jpg"
-            // },
-            // {
-            //     image: "/axeia.jpg"
-            // },
-            // {
-            //     image: "/finelyf.jpg"
-            // },
-            // {
-            //     image: "/mvp.jpg"
-            // },
-            // {
-            //     image: "/hevacoffee.jpg"
-            // },
-            // {
-            //     image: "/sympa.jpg"
-            // },
-            // {
-            //     image: "/sierra.jpg"
-            // },
-            // {
-            //     image: "/cocotres.jpg"
-            // },
-            // {
-            //     image: "/pnoc-ec.png"
-            // },
-            // {
-            //     image: "/bcda.jpg"
-            // },
-            // {
-            //     image: "/vj7.jpg"
-            // },
-            // {
-            //     image: "/theone.jpg"
-            // },
+            {
+                image: <Image src="/spigen.png" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/filinvest.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/nexen.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/vj7.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/axeia.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/finelyf.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/mvp.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/hevacoffee.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/sympa.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/sierra.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/cocotres.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/pnoc-ec.png" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/bcda.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/vj7.jpg" alt="Viva" width={875} height={553} />
+            },
+            {
+                image: <Image src="/theone.jpg" alt="Viva" width={875} height={553} />
+            },
         ]
     }
 ]

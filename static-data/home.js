@@ -208,6 +208,19 @@ const homePageData = {
                 title: "Email",
                 email: "sales@halcyonagile.com.ph"
             }]
+        },
+        {
+            text: [
+                {
+                    text: "One file only."
+                },
+                {
+                    text: "10 MB limit."
+                },
+                {
+                    text: "Allowed types: pdf, docx, doc, jpeg, jpg, png, csv, xlsx, xlsm, xlsb, xltx"
+                }
+            ]
         }
     ],
 }
