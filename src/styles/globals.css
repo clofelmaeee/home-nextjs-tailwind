@@ -81,7 +81,7 @@
   background-repeat: no-repeat;
   background-image: url("../../public/mobile.png");
 }*/
-.app-software-page-header{
+.page-header{
   background-image: url("../../public/erp.jpg");
   max-width: auto;
   min-height: auto;

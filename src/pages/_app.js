@@ -11,7 +11,7 @@ export default function App({ Component, pageProps, header }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name='description' content='Programming Articles' />
       </Head>
-      {/* <Header menus={header} /> */}
+       <Header menus={header} /> 
       <main className="main flex flex-col">
         <Component {...pageProps} />
       </main>

@@ -69,84 +69,79 @@ const servicesData = [
     {
         websites: [
             {
-                image: <div className="relative overflow-hidden"><Image src="/wingzone.jpg" alt="Wingzone" width={875} height={478} title="test" />
-                    <div className="absolute h-full w-full bg-black/20 flex items-center -bottom-10 ">
-
-                    </div>
-                </div>
-
+                image: <Image src="/restaurant/wingzone.jpg" alt="Wingzone" width={875} height={478} title="test" />
             },
             {
-                image: <Image src="/viva.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/viva.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/filinvest-city.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/filinvest-city.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/island-property.jpg" alt="Viva" width={875} height={445} />
+                image: <Image src="/websites/island-property.jpg" alt="Viva" width={875} height={445} />
             },
             {
-                image: <Image src="/thered.jpg" alt="Viva" width={875} height={463} />
+                image: <Image src="/websites/thered.jpg" alt="Viva" width={875} height={463} />
             },
             {
-                image: <Image src="/quest-clark.jpg" alt="Viva" width={875} height={444} />
+                image: <Image src="/websites/quest-clark.jpg" alt="Viva" width={875} height={444} />
             },
             {
-                image: <Image src="/katre.jpg" alt="Viva" width={875} height={470} />
+                image: <Image src="/websites/katre.jpg" alt="Viva" width={875} height={470} />
             },
             {
-                image: <Image src="/saffron.jpg" alt="Viva" width={875} height={228} />
+                image: <Image src="/websites/saffron.jpg" alt="Viva" width={875} height={228} />
             },
             {
-                image: <Image src="/papermoon.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/papermoon.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/smitten.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/smitten.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/spigen.png" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/spigen.png" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/filinvest.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/filinvest.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/nexen.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/nexen.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/vj7.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/vj7.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/axeia.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/axeia.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/finelyf.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/finelyf.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/mvp.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/mvp.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/hevacoffee.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/hevacoffee.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/sympa.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/sympa.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/sierra.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/sierra.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/cocotres.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/cocotres.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/pnoc-ec.png" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/pnoc-ec.png" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/bcda.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/bcda.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/vj7.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/vj7.jpg" alt="Viva" width={875} height={553} />
             },
             {
-                image: <Image src="/theone.jpg" alt="Viva" width={875} height={553} />
+                image: <Image src="/websites/theone.jpg" alt="Viva" width={875} height={553} />
             },
         ]
     }

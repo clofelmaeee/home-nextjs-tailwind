@@ -76,114 +76,112 @@ const homePageData = {
     clients: [
 
         {
-            image: '/client-1.jpg'
+            image: '/clients/client-1.jpg'
         },
         {
-            image: '/client-2.png'
+            image: '/clients/client-2.png'
         },
         {
-            image: '/client-3.png'
+            image: '/clients/client-3.png'
         },
         {
-            image: '/client-1.jpg'
+            image: '/clients/client-1.jpg'
         },
         {
-            image: '/client-2.png'
+            image: '/clients/client-2.png'
         },
         {
-            image: '/client-3.png'
+            image: '/clients/client-3.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-11.png'
         },
         {
-            image: '/client-12.png'
+            image: '/clients/client-12.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-11.png'
         },
         {
-            image: '/client-12.png'
+            image: '/clients/client-12.png'
         },
         {
-            image: '/client-4.png'
+            image: '/clients/client-4.png'
         },
         {
-            image: '/client-5.png'
+            image: '/clients/client-5.png'
         },
         {
-            image: '/client-6.png'
+            image: '/clients/client-6.png'
         },
         {
-            image: '/client-4.png'
+            image: '/clients/client-4.png'
         },
         {
-            image: '/client-5.png'
+            image: '/clients/client-5.png'
         },
         {
-            image: '/client-6.png'
+            image: '/clients/client-6.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-11.png'
         },
         {
-            image: '/client-12.png'
+            image: '/clients/client-12.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-11.png'
         },
         {
-            image: '/client-12.png'
-        },
-
-
-        {
-            image: '/client-7.png'
+            image: '/clients/client-12.png'
         },
         {
-            image: '/client-8.png'
+            image: '/clients/client-7.png'
         },
         {
-            image: '/client-3.png'
+            image: '/clients/client-8.png'
         },
         {
-            image: '/client-7.png'
+            image: '/clients/client-3.png'
         },
         {
-            image: '/client-8.png'
+            image: '/clients/client-7.png'
         },
         {
-            image: '/client-9.png'
+            image: '/clients/client-8.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-9.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-12.png'
+            image: '/clients/client-11.png'
         },
         {
-            image: '/client-10.png'
+            image: '/clients/client-12.png'
         },
         {
-            image: '/client-11.png'
+            image: '/clients/client-10.png'
         },
         {
-            image: '/client-12.png'
+            image: '/clients/client-11.png'
+        },
+        {
+            image: '/clients/client-12.png'
         }
     ],
 

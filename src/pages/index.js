@@ -1,20 +1,13 @@
 import homePageData from '../../static-data/home'
-import Banner from '@/components/banner'
-import AboutUs from '@/components/about-us'
-import Products from '@/components/products'
-import Clients from '@/components/clients'
-import ContactUs from '@/components/contact-us'
+import HomeContent from '@/components/home-content'
 
 export default function Home({ home }) {
 
   return (
-      <>
-        <Banner home={home} />
-        <AboutUs about={home.about} />
-        <Products home={home} />
-        <Clients clients={home.clients} />
-        <ContactUs contact={home.contact} />
-      </>
+    <>
+      <HomeContent home={home} />
+
+    </>
   );
 }
 export async function getStaticProps() {
