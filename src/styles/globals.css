@@ -16,15 +16,7 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+
 .layout-container {
   display: flex;
   flex-direction: column;
@@ -53,34 +45,7 @@
   transition: all ease .3s;
   transform: translateY(0); 
 }
-.slick-slide{
-  height: 260px;
-  border: 1px red;
-}
-/* .page-header::before {
-  content: '';
-  top: -100px;
-  left: 0;
-  width: 350px;
-  height: 10px;
-  display: inline-block;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../../public/laptop.png");
-} */
-/* .page-header::after {
-  content: '';
-  top: -50px;
-  right: 0;
-  width: 200px;
-  height: 10px;
-  display: inline-block;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../../public/mobile.png");
-}*/
+
 .page-header {
   background-image: url("../../public/erp.jpg");
   max-width: auto;

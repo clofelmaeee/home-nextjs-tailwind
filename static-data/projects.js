@@ -49,32 +49,7 @@ const projects = [
             {
                 type: 'list',
                 title: 'Features Overview',
-                list: [
-                    {
-                        item: "Includes an API based Progressive Web App (PWA) with almost full mobile app functionality."
-                    },
-                    {
-                        item: "Mobile responsive and “mobile first” design.",
-                    },
-                    {
-                        item: "Easy to use CMS for uploading and managing products, users and branches.",
-                    },
-                    {
-                        item: "Includes COD, store pickup and almost any payment gateway.",
-                    },
-                    {
-                        item: " Each store can set up their own delivery area for the “Check to see if we deliver in your Area” .This can be based on postal codes, suburbs or barangas for example.",
-                    },
-                    {
-                        item: "Unlimited number of branches/ stores, each with their own dashboard for managing and tracking sales orders.",
-                    },
-                    {
-                        item: "Customers can create a log-in (members) account.",
-                    },
-                    {
-                        item: "Mobile printer app for viewing and printing out the orders, either for the cashier, kitchen or delivery, or all three.This app also allows the staff to track orders and manage their status without having to use a PC or laptop.",
-                    },
-                ]
+                list: "<ul><li>Includes an API based Progressive Web App (PWA) with almost full mobile app functionality.</li> <li>Mobile responsive and “mobile first” design.</li> <li>Easy to use CMS for uploading and managing products, users and branches.</li> <li>Includes COD, store pickup and almost any payment gateway.</li> <li>Each store can set up their own delivery area for the “Check to see if we deliver in your Area” .This can be based on postal codes, suburbs or barangas for example.</li> <li>Unlimited number of branches/ stores, each with their own dashboard for managing and tracking sales orders.</li> <li>Customers can create a log-in (members) account.</li> <li>Mobile printer app for viewing and printing out the orders, either for the cashier, kitchen or delivery, or all three.This app also allows the staff to track orders and manage their status without having to use a PC or laptop.</li></ul>"
             },
             {
                 type: 'content-right',
@@ -87,20 +62,8 @@ const projects = [
                         height: 500
                     }
                 ],
-                list: [
-                    {
-                        item: "The Progressive Web Application (PWA) provides Mobile App functionality, providing improved user retention and performance, without the complications involved in maintaining a mobile app."
-                    },
-                    {
-                        item: "It's not downloaded from an app store. Users only need to click on the link (bottom right) to install it on their desktop or mobile phone home screen.",
-                    },
-                    {
-                        item: "PWAs load in seconds, and use a very small amount of phone memory.",
-                    },
-                    {
-                        item: "PWAs work offline like mobile apps.",
-                    }
-                ]
+                list: "<ul><li>The Progressive Web Application (PWA) provides Mobile App functionality, providing improved user retention and performance, without the complications involved in maintaining a mobile app.</li> <li>It's not downloaded from an app store. Users only need to click on the link (bottom right) to install it on their desktop or mobile phone home screen.</li> <li>PWAs load in seconds, and use a very small amount of phone memory.</li> <li>PWAs work offline like mobile apps.</li></ul>"
+
             },
             {
                 type: 'content-right',

@@ -41,16 +41,12 @@ const Restaurant = ({ projectsData }) => {
                 <div className="container flex justify-center mx-auto max-w-[1140px]">
                     <div className="flex flex-col justify-center">
                         <h2 className="text-center text-[#0399d5] text-[30px] font-bold" dangerouslySetInnerHTML={{ __html: projectsData[0].blocks[0].title }} />
-                        {projectsData[0].blocks[0].list.map((item, index) => (
-                            <ul key={index} className="">
-                                <li className="text-[20px] text-[#55616d] list-disc">{item.item}</li>
-                            </ul>
-                        ))}
+                        <div dangerouslySetInnerHTML={{ __html: projectsData[0].blocks[0].list }} />
                     </div>
                 </div>
             </section>
             <section className="features-list pt-[60px]">
-                <div className="container flex justify-center mx-auto   ">
+                <div className="container flex justify-center mx-auto">
 
                     <div className=" flex space-x-8 ">
                         {projectsData[0].blocks[1].image.map((item, index) => (
@@ -60,21 +56,11 @@ const Restaurant = ({ projectsData }) => {
                         ))}
                         <div className="">
                             <h2 className=" text-[#0399d5] text-[30px] font-bold" dangerouslySetInnerHTML={{ __html: projectsData[0].blocks[1].title }} />
-                            {projectsData[0].blocks[1].list.map((item, index) => (
-                                <ul key={index} className="">
-                                    <li className="text-[20px] text-[#55616d] list-disc">{item.item}</li>
-                                </ul>
-                            ))}
+                            <div dangerouslySetInnerHTML={{ __html: projectsData[0].blocks[1].list }} />
                         </div>
                     </div>
-
                 </div>
             </section>
-
-
-
-
-
         </div>
     );
 }

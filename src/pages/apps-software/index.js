@@ -3,7 +3,6 @@ import AppsSoftwareData from "../../../static-data/apps-software";
 import Link from "next/link";
 import Image from "next/image";
 
-
 export default function AppsSoftware({ projectsData }) {
 
     return (
@@ -15,7 +14,6 @@ export default function AppsSoftware({ projectsData }) {
                     <div className='text-[#55616d] text-[18px] space-y-5 px-[200px] md:px-[100px] sm:px-[50px] sm:mx-0' dangerouslySetInnerHTML={{ __html: AppsSoftwareData.description }} />
                 </div>
             </section>
-
             <section className="block-restaurant flex flex-col items-center mt-[100px] ">
                 <div className="container flex flex-col">
                     {projectsData.map((project, index) => (
@@ -48,7 +46,7 @@ export default function AppsSoftware({ projectsData }) {
                             <div className=' text-[#55616d] text-[20px] space-y-5 px-[200px] my-[30px] whitespace-pre-line' dangerouslySetInnerHTML={{ __html: project.description }} />
 
                             <div className="flex justify-center mt-[50px]">
-                                <Link href={`/apps-software/projects${project.slug}`} className=" bg-[#ff7105] text-white text-center px-[15px] py-[13px] text-[18px] w-[195px] " dangerouslySetInnerHTML={{ __html: "Learn More   >>" }}/>
+                                <Link href={`/apps-software/projects${project.slug}`} className=" bg-[#ff7105] text-white text-center px-[15px] py-[13px] text-[18px] w-[195px] " dangerouslySetInnerHTML={{ __html: "Learn More   >>" }} />
                             </div>
                         </div>
                     ))}
