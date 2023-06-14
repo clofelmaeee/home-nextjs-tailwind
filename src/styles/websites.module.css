@@ -1,0 +1,19 @@
+.description h2, .description h3 {
+    font-size: 20px;
+}
+
+.description ul > li {
+    position: relative;
+    padding-left: 20px;
+}
+.description ul > li::before {
+    content: '';
+    background: red;
+    height: 8px;
+    width: 8px;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}

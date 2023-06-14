@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 export default function AppsSoftware({ projectsData }) {
-    console.log(AppsSoftwareData);
+
     return (
         <div className="apps-software flex flex-col w-full">
             <h1 className="page-header w-full text-center text-[#d56503] font-bold text-[40px]">{AppsSoftwareData.title}</h1>
@@ -16,7 +16,7 @@ export default function AppsSoftware({ projectsData }) {
                 </div>
             </section>
 
-            <section className="block-restaurant flex flex-col items-center mt-[100px] transition duration-700 ease-in">
+            <section className="block-restaurant flex flex-col items-center mt-[100px] ">
                 <div className="container flex flex-col">
                     {projectsData.map((project, index) => (
                         <div className="item pb-[100px]" key={index}>

@@ -47,47 +47,88 @@ const projects = [
         ],
         blocks: [
             {
-                type: 'carousel',
-                title: 'Player Mobile App',
-                images: [
+                type: 'list',
+                title: 'Features Overview',
+                list: [
                     {
-                        title: 'App Homepage',
-                        path: '/asd.png',
+                        item: "Includes an API based Progressive Web App (PWA) with almost full mobile app functionality."
                     },
                     {
-                        title: 'App Homepage',
-                        path: '/asd.png',
+                        item: "Mobile responsive and “mobile first” design.",
                     },
                     {
-                        title: 'App Homepage',
-                        path: '/asd.png',
+                        item: "Easy to use CMS for uploading and managing products, users and branches.",
+                    },
+                    {
+                        item: "Includes COD, store pickup and almost any payment gateway.",
+                    },
+                    {
+                        item: " Each store can set up their own delivery area for the “Check to see if we deliver in your Area” .This can be based on postal codes, suburbs or barangas for example.",
+                    },
+                    {
+                        item: "Unlimited number of branches/ stores, each with their own dashboard for managing and tracking sales orders.",
+                    },
+                    {
+                        item: "Customers can create a log-in (members) account.",
+                    },
+                    {
+                        item: "Mobile printer app for viewing and printing out the orders, either for the cashier, kitchen or delivery, or all three.This app also allows the staff to track orders and manage their status without having to use a PC or laptop.",
                     },
                 ]
             },
             {
-                type: 'group_list',
-                title: 'Player & Staff Mobile App Features',
-                items: [
+                type: 'content-right',
+                title: 'Progressive Web App (PWA)',
+                image: [
                     {
-                        title: 'Player Mobile App',
-                        description: '<p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p>'
+                        path: '/restaurant/pwa.jpg',
+                        alt: 'Progressive Web App (PWA)',
+                        width: 253,
+                        height: 500
+                    }
+                ],
+                list: [
+                    {
+                        item: "The Progressive Web Application (PWA) provides Mobile App functionality, providing improved user retention and performance, without the complications involved in maintaining a mobile app."
+                    },
+                    {
+                        item: "It's not downloaded from an app store. Users only need to click on the link (bottom right) to install it on their desktop or mobile phone home screen.",
+                    },
+                    {
+                        item: "PWAs load in seconds, and use a very small amount of phone memory.",
+                    },
+                    {
+                        item: "PWAs work offline like mobile apps.",
                     }
                 ]
             },
             {
-                type: 'group_list',
-                title: 'Administrator Dashboard Functions',
-                items: [
+                type: 'content-right',
+                title: 'Select Delivery Date and Time',
+                image: [
                     {
-                        title: 'Booking Management',
-                        description: '<p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p>'
+                        path: '/restaurant/date-time.jpeg',
+                        alt: 'Select Delivery Date and Time',
+                        width: 400,
+                        height: 366
+                    }
+                ],
+                list: [
+                    {
+                        item: "The Progressive Web Application (PWA) provides Mobile App functionality, providing improved user retention and performance, without the complications involved in maintaining a mobile app."
                     },
                     {
-                        title: 'Golf Cart Management',
-                        description: '<p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p><p>Account Registration</p>'
+                        item: "It's not downloaded from an app store. Users only need to click on the link (bottom right) to install it on their desktop or mobile phone home screen.",
+                    },
+                    {
+                        item: "PWAs load in seconds, and use a very small amount of phone memory.",
+                    },
+                    {
+                        item: "PWAs work offline like mobile apps.",
                     }
                 ]
             }
+
         ]
     },
     {

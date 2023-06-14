@@ -10,6 +10,7 @@ export default function App({ Component, pageProps, header }) {
         <title>Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name='description' content='Programming Articles' />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
        <Header menus={header} /> 
       <main className="main flex flex-col">
