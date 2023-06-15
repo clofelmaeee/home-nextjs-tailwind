@@ -54,6 +54,14 @@
   margin-top: 70px;
 } 
 
-.custom-img {
-  background-image: url(/bg-img.jpg);
+.slick-sliide {
+	background-color: rebeccapurple;
+	color: aqua;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	border: 1px solid white;
+	
 }

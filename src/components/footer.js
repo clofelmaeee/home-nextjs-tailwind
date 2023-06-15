@@ -1,42 +1,38 @@
-import footerData from "../../static-data/footer"
+import contactMobileData from "../../static-data/contactMobile";
+import contactLandline from "../../static-data/contactLandline"
+import footerData from "../../static-data/footer";
+import Link from "next/link";
 
+const Footer = ({ }) => {
 
-const Footer = () => {
-console.log
   return (
-    <footer className="footer p-[40px] w-full bg-[#626262] ">
-      <div className=" text-[#d8d8d8] text-[18px] space-x-8 justify-center md:flex sm:block">
-        <ul className="px-[30px] space-y-4">
-          {footerData.menu1.map((item, index) => (
-            <li key={index}>
-              {item.text}
-            </li>
-          ))}
-        </ul>
-        <ul className="px-[30px]">
-          {footerData.menu2.map((item, index) => (
-            <li key={index}>
-              {item.text}
-            </li>
-          ))}
-        </ul>
-        <ul className="px-[30px] border-l-[1px] border-[#d8d8d8]">
-          {footerData.menu3.map((item, index) => (
-            <li key={index}>
-              {item.text}
-            </li>
-          ))}
-        </ul>
-        <ul className="px-[30px] border-l-[1px] border-[#d8d8d8]">
-          {footerData.menu4.map((item, index) => (
-            <li key={index}>
-              {item.text}
-            </li>
-          ))}
-        </ul>
-        <p className="flex justify-start  text-[#d8d8d8] text-[15px] space-x-8  mx-auto">Copyright 2023 Halcyon Agile</p>
+    <footer className="footer p-[40px] w-full bg-[#626262]">
+      <div className=" container  w-full mx-auto max-w-[1140px]">
+        <div className="footer-top flex w-full justify-evenly text-[#d8d8d8] text-[18px]">
+          <section className="px-[30px] space-y-5">
+            <div className="" dangerouslySetInnerHTML={{ __html: footerData.menus }} />
+          </section>
+          <section className="flex flex-col px-[30px] border-r-[1px] border-[#d8d8d8] ">
+            <label className="copyright " dangerouslySetInnerHTML={{ __html: contactLandline.label }} />
+            <Link href="#" className="copyright " dangerouslySetInnerHTML={{ __html: contactLandline.value }} />
+          </section>
+          <section className="px-[30px] border-r-[1px] border-[#d8d8d8]">
+            <label>{contactMobileData.label}</label>
+            {contactMobileData.items.map((item, index) =>
+              <div key={index}> 
+               <Link href="#">{item.value}</Link> 
+              </div>  
+            )}
+          </section>
+          <section className="px-[30px]">
+            <div className="copyright " dangerouslySetInnerHTML={{ __html: footerData.address }} />
+          </section>
+        
+        </div>
+        <div className="footer-bottom pl-[30px]">
+          <div className="copyright text-[#d8d8d8] text-[15px]" dangerouslySetInnerHTML={{ __html: footerData.copyright }} />
+        </div>
       </div>
-      
     </footer>
   );
 }

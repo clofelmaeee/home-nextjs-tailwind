@@ -1,4 +1,4 @@
-import homePageData from '../../static-data/home'
+import homePageData from '../../static-data/homepage'
 import HomeContent from '@/components/home-content'
 
 export default function Home({ home }) {
