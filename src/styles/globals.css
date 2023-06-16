@@ -54,14 +54,34 @@
   margin-top: 70px;
 } 
 
-.slick-sliide {
-	background-color: rebeccapurple;
-	color: aqua;
-	display: flex !important;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: 200px;
-	border: 1px solid white;
-	
+.block-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Set your desired height */
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Set your desired width */
+  margin: 0 10px; /* Set margin between items */
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
 }

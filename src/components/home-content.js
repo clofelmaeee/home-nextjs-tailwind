@@ -32,21 +32,25 @@ const HomeContent = ({ home }) => {
         <div className='homepage-content'>
             <section className={`block-banner h-screen  ${styles.customBg}`}>
                 <div className='container py-[100px] absolute left-[150px] right-0 top-0'>
-                    <Image
-                        src={hero.logo}
-                        width={369}
-                        height={117}
-                        alt="Halcyon Agile"
-                        className='client-img mb-[30px]'
-                    />
+                    <div className='image-container'>
+                        <Image
+                            src={hero.logo}
+                            width={369}
+                            height={117}
+                            alt="Halcyon Agile"
+                            className='client-img mb-[30px]'
+                        />
+                    </div>
                     <div className="text-[#55616d] text-[30px] max-w-[585px]" dangerouslySetInnerHTML={{ __html: hero.description }} />
                 </div>
             </section>
             <section className='block-about-us container mx-auto py-[100px] max-w-[1140px]'>
                 <div className='flex mx-auto'>
                     {about.introItems.map((item, index) => (
-                        <div key={index} className="item flex justify-center flex-col items-center col-4 w-full "   >
-                            <Image src={item.image.path} width={item.image.width} height={item.image.height} alt={item.title} />
+                        <div key={index} className="item flex justify-center flex-col items-center col-4 w-full ">
+                            <div className='image-container'>
+                                <Image src={item.image.path} width={80} height={89} alt={item.title}  />
+                            </div>
                             <p className='font-bold text-[60px]  text-[#55616d]'>{item.number}</p>
                             <h2 className='font-bold text-[18px] text-[#55616d]'>{item.title} </h2>
                         </div>
@@ -57,31 +61,33 @@ const HomeContent = ({ home }) => {
             <section className='block-products py-[100px] bg-[#f2f2f2]'>
                 <div className='flex space-x-8 mx-auto justify-center  max-w-[1140px] '>
                     {products.items.map((item, index) =>
-                        <div key={index} className="item bg-white shadow-xl p-[30px] max-w-[350px] mx-h-[352px]" style={{width: "auto", height: "auto"}}>
+                        <div key={index} className="item bg-white shadow-xl p-[30px] max-w-[350px] mx-h-[352px]" style={{ width: "auto", height: "auto" }}>
                             <Image src={item.image.path} width={289.95} height={223.42} alt={item.title} />
                             <h2 className='text-center text-[20px] mt-[20px] text-[#55616d]'>{item.title}</h2>
                         </div>
                     )}
                 </div>
             </section>
-            <section className='block-clients slider-wrapper p-[100px]'>
-                <div className="container mx-auto  max-w-[1140px]">
-                    <h2 className="block-title text-[#0399d5] text-[42px] mb-[30px] text-center font-bold">{clients.title}</h2>
-                    <div className="flex flex-col w-full ">
-                        <Slider {...settings} style={{ position: "center" }}>
-                            {clients.images.map((clients, index) =>
-                                <div key={index} className=" " style={{width: "auto", height: "auto"}}>
+            <section className="block-clients slider-wrapper p-[100px]">
+                <div className="container mx-auto max-w-[1140px]">
+                    <h2 className="block-title text-[#0399d5] text-[42px] mb-[30px] text-center font-bold">
+                        {clients.title}
+                    </h2>
+                    <Slider {...settings} style={{ position: "center" }}>
+                        {clients.images.map((client, index) => (
+                            <div key={index} className="slider-item">
+                                <div className="image-container" style={{ width: "auto", height: "auto" }}>
                                     <Image
-                                        src={clients.path}
-                                        alt={clients.alt}
-                                        width={clients.width}
-                                        height={clients.height}
-                                        className="flex self-center"
+                                        src={client.path}
+                                        alt={client.alt}
+                                        width={client.width}
+                                        height={client.height}
+                                        priority={true}
                                     />
                                 </div>
-                            )}
-                        </Slider>
-                    </div>
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </section>
             <section className="block-contact-us py-[100px] mx-auto max-w-[1140px] ">

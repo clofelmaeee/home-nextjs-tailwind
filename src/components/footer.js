@@ -29,7 +29,7 @@ const Footer = ({ }) => {
           </section>
         
         </div>
-        <div className="footer-bottom pl-[30px]">
+        <div className="footer-bottom pl-[55px]">
           <div className="copyright text-[#d8d8d8] text-[15px]" dangerouslySetInnerHTML={{ __html: footerData.copyright }} />
         </div>
       </div>

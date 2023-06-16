@@ -28,7 +28,7 @@ const Header = () => {
         <header
             className={`header ${bgClass} fixed z-10  w-full px-[50px]`} >
             <div className="w-full flex py-[8px] px-[16px]">
-                <div className="header-logo w-full p-[5px]">
+                <div className="image-container header-logo w-full p-[5px]">
                     <Image
                         src="/header-logo.png"
                         width={160}

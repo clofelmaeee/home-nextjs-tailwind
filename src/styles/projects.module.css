@@ -1,0 +1,19 @@
+.features ul > li {
+    position: relative;
+    padding-left: 25px;
+}
+.features ul > li::before {
+    content: '';
+    background: #959595;
+    height: 10px;
+    width: 10px;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    top: 11px;
+    left: 0;
+}
+/* try but not working */
+.slick-arrow{
+    background-color: black;
+}
