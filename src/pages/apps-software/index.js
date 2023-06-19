@@ -2,15 +2,22 @@ import projects from "../../../static-data/projects"
 import AppsSoftwareData from "../../../static-data/apps-software";
 import Link from "next/link";
 import Image from "next/image";
+import AppsSoftwareSVG from "@/components/AppsSoftwareSVG";
+import styles from "../../styles/appssoftware.module.css"
 
 export default function AppsSoftware({ projectsData }) {
 
     return (
         <div className="apps-software flex flex-col w-full">
-            <h1 className="page-header w-full text-center text-[#d56503] font-bold text-[40px]">{AppsSoftwareData.title}</h1>
+
+            <h1 className={`page-header flex items-center justify-center w-full text-center text-[#d56503] font-bold text-[40px] h-[160px] py-[30px] ${styles.pageHeader}`}>
+                <span><AppsSoftwareSVG /></span>
+                {AppsSoftwareData.title}
+            </h1>
             <section className="block-introduction py-[50px] bg-[#f2f2f2]" >
                 <div className="container mx-auto px-[100px]">
                     <div className='text-[#55616d] text-[18px] space-y-5 px-[200px] md:px-[100px] sm:px-[50px] sm:mx-0' dangerouslySetInnerHTML={{ __html: AppsSoftwareData.description }} />
+
                 </div>
             </section>
             <section className="block-restaurant flex flex-col items-center mt-[100px]">
@@ -21,7 +28,7 @@ export default function AppsSoftware({ projectsData }) {
                             <div className="flex justify-center mb-[35px]">
                                 <div className="absolute flex space-x-5">
                                     {project.frames?.map((frame, index) => (
-                                        <Image key={index} src={frame.path} alt={frame.alt} width={frame.width} height={frame.height}/>
+                                        <Image key={index} src={frame.path} alt={frame.alt} width={frame.width} height={frame.height} />
                                     ))}
                                 </div>
                                 <div className="flex space-x-[105px] py-[20px]">

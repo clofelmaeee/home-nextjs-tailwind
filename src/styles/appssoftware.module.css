@@ -1,0 +1,50 @@
+.pageHeader {
+    position: relative; 
+  }
+  
+  .pageHeader::before {
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    left: -150px; 
+    transform: translateY(-50%); 
+    width: 150px; 
+    height: 150px; 
+  }
+  
+
+  .pageHeader span {
+    position: relative; 
+    z-index: 1; 
+  }
+  
+
+
+.svg{
+    height: 150px;
+    margin-right: 15px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.st0{
+    fill: #B5BB35
+}
+.st1{
+    fill: #00ABE9
+}
+.st2{
+    fill: #75E1E7;
+}
+.st3{
+   fill: #F06504;
+}
+.st4{
+    fill: #DFEEF4;
+ }
+ .st5{
+    fill: #FF810C;
+ }
+ .st6{
+    fill: #2D55D3;
+ }
