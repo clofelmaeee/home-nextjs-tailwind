@@ -1,3 +1,52 @@
 .customBg {
-    background-image: url(/homepage/bg-img.jpg);
-  }
+  background-image: url(/homepage/bg-img.jpg);
+}
+
+.slider-wrapper {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : row;
+  /* Change flex-direction to row */
+}
+
+.image-container {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex           : 0 0 auto;
+  /* Add flex property to adjust item sizing */
+  margin         : 0 10px;
+  /* Set margin between items */
+}
+
+.slider-item {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 100%;
+  /* Adjust the width to fill the available space */
+}
+
+.myInput {
+  padding      : 5px 12px;
+  margin       : 8px 0;
+  box-sizing   : border-box;
+  border-bottom: 1px solid #ccc;
+}
+.myInput:focus {
+  outline: none;
+
+}
+.asterisk {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: orange; /* Customize the color as needed */
+}
+
+.formRow{
+  display: inline-block;
+  vertical-align: middle;
+}

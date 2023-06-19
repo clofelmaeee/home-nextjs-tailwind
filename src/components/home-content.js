@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import styles from "../styles/homepage.module.css"
-
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Checkbox, TextField, FormControlLabel, Button, Input } from "@mui/material";
-import Link from 'next/link';
 
 const HomeContent = ({ home }) => {
     const hero = home.blocks[0]
@@ -31,8 +28,8 @@ const HomeContent = ({ home }) => {
     return (
         <div className='homepage-content'>
             <section className={`block-banner h-screen  ${styles.customBg}`}>
-                <div className='container py-[100px] absolute left-[150px] right-0 top-0'>
-                    <div className='image-container'>
+                <div className='container py-[100px] w-[585px]'>
+                    <div className='image-container absolute left-[150px] top-[200px]' >
                         <Image
                             src={hero.logo}
                             width={369}
@@ -40,8 +37,8 @@ const HomeContent = ({ home }) => {
                             alt="Halcyon Agile"
                             className='client-img mb-[30px]'
                         />
+                        <div className="text-[#55616d] text-[30px] w-[585px] absolute top-[150px]" dangerouslySetInnerHTML={{ __html: hero.description }} />
                     </div>
-                    <div className="text-[#55616d] text-[30px] max-w-[585px]" dangerouslySetInnerHTML={{ __html: hero.description }} />
                 </div>
             </section>
             <section className='block-about-us container mx-auto py-[100px] max-w-[1140px]'>
@@ -49,7 +46,7 @@ const HomeContent = ({ home }) => {
                     {about.introItems.map((item, index) => (
                         <div key={index} className="item flex justify-center flex-col items-center col-4 w-full ">
                             <div className='image-container'>
-                                <Image src={item.image.path} width={80} height={89} alt={item.title}  />
+                                <Image src={item.image.path} width={item.image.width} height={item.image.height} alt={item.title} />
                             </div>
                             <p className='font-bold text-[60px]  text-[#55616d]'>{item.number}</p>
                             <h2 className='font-bold text-[18px] text-[#55616d]'>{item.title} </h2>
@@ -68,21 +65,22 @@ const HomeContent = ({ home }) => {
                     )}
                 </div>
             </section>
-            <section className="block-clients slider-wrapper p-[100px]">
+
+            <section className="block-clients p-[100px]">
                 <div className="container mx-auto max-w-[1140px]">
                     <h2 className="block-title text-[#0399d5] text-[42px] mb-[30px] text-center font-bold">
                         {clients.title}
                     </h2>
-                    <Slider {...settings} style={{ position: "center" }}>
+                    <Slider {...settings}>
                         {clients.images.map((client, index) => (
                             <div key={index} className="slider-item">
-                                <div className="image-container" style={{ width: "auto", height: "auto" }}>
+                                <div className="image-container">
                                     <Image
                                         src={client.path}
                                         alt={client.alt}
                                         width={client.width}
                                         height={client.height}
-                                        priority={true}
+                                        priority="true"
                                     />
                                 </div>
                             </div>
@@ -90,6 +88,7 @@ const HomeContent = ({ home }) => {
                     </Slider>
                 </div>
             </section>
+
             <section className="block-contact-us py-[100px] mx-auto max-w-[1140px] ">
                 <div className="container flex justify-center space-x-5 ">
                     <div className="contacts px-[90px]">
@@ -98,106 +97,59 @@ const HomeContent = ({ home }) => {
                         <div className="flex flex-col text-[#55616d] text-[22px] mb-[25px]" dangerouslySetInnerHTML={{ __html: contact.mobile }} />
                         <div className="flex flex-col text-[#55616d] text-[22px] mb-[25px]" dangerouslySetInnerHTML={{ __html: contact.email }} />
                     </div>
-                    {/* <form className="inquire-now flex flex-col mx-auto text-[16px] text-[#55616d] ">
-                        <div className="flex-wrap space-x-8  w-full">
-                            <TextField
-                                variant="standard"
-                                label="Name"
-                                required
-                                color="warning"
-                            />
-                            <TextField
-                                variant="standard"
-                                label="Email"
-                                required
-                                color="warning"
-                            />
-                        </div>
-                        <div className="flex-wrap space-x-8">
-                            <TextField
-                                variant="standard"
-                                label="Country/State"
-                                required
-                                color="warning"
-                            />
-                            <TextField
-                                variant="standard"
-                                label="Phone Number"
-                                color="warning"
-                            />
-                        </div >
-                        <div className="flex flex-col w-full  mt-[10px] text-[16px]">
-                            <div className='flex'>
-                                <div className="flex flex-col w-full mx-auto">
-                                    <p>Preferred Call Time</p>
-                                    <FormControlLabel
-                                        control={<Checkbox color="warning" />}
-                                        label="Morning"
-                                        labelPlacement="Morning"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="warning" />}
-                                        label="Afernoon"
-                                        labelPlacement="Afternoon"
-                                        color="warning"
-                                    />
-                                    <FormControlLabel
+                    <div>
+                        <form>
+                            <div className='flex-wrap'>
 
-                                        control={<Checkbox color="warning" />}
-                                        label="Evening"
-                                        labelPlacement="Evening"
-                                        color="warning"
-                                    />
+                                <div className={styles.formRow}>
+                                    <input type="text" placeholder="Name" className={styles.myInput} required />
+                                    <input type="text" placeholder="Email" className={styles.myInput} required />
                                 </div>
-                                <div className="flex flex-col w-full mx-auto">
-                                    <p>Preferred Language</p>
-                                    <FormControlLabel
-                                        control={<Checkbox color="warning" />}
-                                        label="English"
-                                        labelPlacement="English"
-                                        color="warning"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="warning" />}
-                                        label="Tagalog"
-                                        labelPlacement="Tagalog"
-                                        color="warning"
-                                    />
-                                    <FormControlLabel
+                                <div className={styles.formRow}>
+                                    <input type="text" placeholder="Country/State" className={styles.myInput} required />
+                                    <input type="text" placeholder="Phone Number" className={styles.myInput} required />
+                                </div>
 
-                                        control={<Checkbox color="warning" />}
-                                        label="Either"
-                                        labelPlacement="Either"
-                                        color="warning"
-                                    />
+                                <div className="flex">
+                                    <div className={styles.checkboxColumn}>
+                                        <p className={styles.label}>Preferred Call Time</p>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>Morning</label>
+                                        </div>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>Afternoon</label>
+                                        </div>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>Evening</label>
+                                        </div>
+                                    </div>
+                                    <div className={styles.checkboxColumn}>
+                                        <p className={styles.label}>Preferred Language</p>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>English</label>
+                                        </div>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>Tagalog</label>
+                                        </div>
+                                        <div className={styles.checkboxItem}>
+                                            <input type="checkbox" />
+                                            <label>Either</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </form>
 
-                        </div>
-                        <TextField
-                            label="Message/Requirements"
-                            multiline
-                            rows={4}
-                            required
-                            color="warning"
-                        />
 
-                        <input
-                            id="upload-photo"
-                            name="upload-photo"
-                            type="file"
-                            className="mt-[15px]"
-                        />
-
-                        <div className=" text-[#55616d] text-[14px]" dangerouslySetInnerHTML={{ __html: contact.edit_attachment }} />
-                        <div className="flex justify-start mt-[15px]">
-                            <button className="text-white text-[16px] bg-[#ff8011] px-[23px] py-[15px] rounded">INQUIRE NOW</button>
-                        </div>
-
-                    </form> */}
+                    </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }
 
