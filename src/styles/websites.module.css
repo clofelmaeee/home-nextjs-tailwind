@@ -100,12 +100,12 @@
     opacity   : 1;
     visibility: inherit;
     transition: ease-in .2s;
-    transform : translateY(-5px);
+    transform : translateY(-6px);
     /* transform : translateY(5px); */
 }
 .projectList .imageContainer:not(:hover) > .title {
     transition: ease-in 0.2s;
-    transform: translateY(0);
+    transform: translateY(-3px);
     opacity: 0;
     visibility: hidden;
  
