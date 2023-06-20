@@ -1,3 +1,4 @@
+import BackToTop from "@/components/BackToTop";
 import Image from "next/image";
 import servicesData from "../../static-data/website-services";
 import styles from "../styles/websites.module.css";
@@ -31,6 +32,7 @@ const Websites = ({ websites }) => {
                     ))}
                 </div>
             </section>
+            <BackToTop />
         </div>
 
     );

@@ -7,6 +7,7 @@ import styles from "../../../styles/projects.module.css"
 import projects from "../../../../static-data/projects";
 import stylesApp from "../../../styles/appSoftware.module.css"
 import AppsSoftwareSVG from "@/components/AppsSoftwareSVG";
+import BackToTop from "@/components/BackToTop";
 
 const Restaurant = ({ projectsData }) => {
     const settings = {
@@ -113,6 +114,7 @@ const Restaurant = ({ projectsData }) => {
             <div className="flex justify-center mt-[50px] mb-[70px]">
                 <Link href={`/apps-software/`} className=" bg-[#ff7105] text-white text-center px-[15px] py-[13px] text-[18px] w-[195px] " dangerouslySetInnerHTML={{ __html: "<< Back to Portfolio" }} />
             </div>
+            <BackToTop />
         </div>
     );
 };

@@ -3,6 +3,7 @@ import projects from "../../../../static-data/projects";
 import AppsSoftwareSVG from "@/components/AppsSoftwareSVG";
 import styles from "../../../styles/appSoftware.module.css"
 import Carousel from "@/components/Golf/Carousel";
+import BackToTop from "@/components/BackToTop";
 
 
 const GolfCourse = ({ projectsData }) => {
@@ -33,6 +34,7 @@ const GolfCourse = ({ projectsData }) => {
             </section>
             
             <Carousel projectsData={projectsData} />
+            <BackToTop />
         </div>
 
     );
