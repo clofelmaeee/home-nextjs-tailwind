@@ -87,16 +87,47 @@
     background-image : url(/websites/mobile.png);
 }
 
+.projectList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .project {
     padding: 50px;
 }
 
-.image {
-    border    : 9px solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.itemWrapper{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.projectList .imageContainer:hover>.title {
+.imageContainer {
+    border    : 9px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    top: 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+     font-weight: 500;
+    padding    : 10px 15px;
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 75%, rgba(0, 0, 0, .6) 100%);
+    width      : 95%;
+    text-align : center;
+    font-size  : 20px;
+    color      : #ffff;
+    overflow   : hidden;
+}
+
+.projectList .itemWrapper:hover>.title {
     opacity      : 1;
     visibility   : inherit;
     transition   : ease-in .2s;
@@ -104,7 +135,7 @@
     /* transform : translateY(5px); */
 }
 
-.projectList .imageContainer:not(:hover)>.title {
+.projectList .itemWrapper:not(:hover)>.title {
     transition: ease-in 0.2s;
     transform : translateY(-3px);
     opacity   : 0;
@@ -119,13 +150,6 @@
     bottom     : 54px;
     right      : 0;
     z-index    : 1;
-    font-weight: 500;
-    padding    : 10px 15px;
-    background : linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 75%, rgba(0, 0, 0, .6) 100%);
-    width      : 95%;
-    text-align : center;
-    font-size  : 20px;
-    color      : #ffff;
-    overflow   : hidden;
+   
 
 }

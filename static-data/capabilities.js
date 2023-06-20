@@ -6,7 +6,7 @@ const capabilitiesData = [
             {
                 title: "Node.JS",
                 image: <Image src="/capabilities/nodejs.png" alt="Node JS" height={55} width={173} />,
-                description: "Node.JS is our technology of choice for building enterprise systems built on a microservices architecture.",
+                description: "<p>Node.JS is our technology of choice for building enterprise systems built on a microservices architecture.</p>",
             },
             {
                 title: "REACT & REACT Native",
