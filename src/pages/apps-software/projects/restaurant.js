@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Slider from "react-slick";
 import projects from "../../../../static-data/projects";
 import styles from "../../../styles/projects.module.css"
+import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from "next/link";

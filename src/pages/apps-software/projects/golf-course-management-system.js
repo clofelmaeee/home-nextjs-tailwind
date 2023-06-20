@@ -1,7 +1,19 @@
 import Image from "next/image";
 import projects from "../../../../static-data/projects";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const GolfCourse = ({projectsData}) => {
+const GolfCourse = ({ projectsData }) => {
+
+    const settings = {
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        lazyLoad: true,
+    };
     return (
 
         <div className="golf-course relative  flex flex-col justify-center w-full mx-auto">
@@ -23,6 +35,36 @@ const GolfCourse = ({projectsData}) => {
                     <div className="text-[#55616d] text-[20px] space-y-5 my-[30px]" dangerouslySetInnerHTML={{ __html: projectsData[1].description }} />
                 </div>
             </section>
+            {projectsData[1].blocks.map((block, index) => (
+                <div className="blocks" key={index}>
+                    {block.type === "carousel" ? <section className="carousel bg-[#f2f2f2]">
+                        <div className="container mx-auto max-w-[1140px] py-[50px]">
+                            <h2
+                                className="text-center text-[#0399d5] text-[30px] font-bold mb-[50px]"
+                                dangerouslySetInnerHTML={{ __html: block.title }}
+                            />
+                            <div className="slider-container">
+                               <Slider {...settings}>
+                                    {block.images.map((item, index) => (
+                                        <div key={index} >
+                                            <div className=" flex justify-center mx-auto">
+                                                <Image
+                                                    src={item.path}
+                                                    alt={item.alt}
+                                                    width={297}
+                                                    height={610}
+                                                />
+                                            </div>
+                                            <h3 className="text-center text-[#55616d] text-[20px] font-extrabold mt-[20px]">{item.title}</h3>
+                                        </div>
+                                    ))}
+                                </Slider> 
+                            </div>
+                        </div>
+                    </section> : null}
+
+                </div>
+            ))}
         </div>
 
     );
