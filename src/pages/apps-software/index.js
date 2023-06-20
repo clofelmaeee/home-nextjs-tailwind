@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AppsSoftwareSVG from "@/components/AppsSoftwareSVG";
 import styles from "../../styles/appSoftware.module.css"
+import BackToTop from "@/components/BackToTop";
 
 export default function AppsSoftware({ projectsData }) {
 
@@ -43,6 +44,7 @@ export default function AppsSoftware({ projectsData }) {
                     ))}
                 </div>
             </section>
+            <BackToTop />
         </div>
     )
 }
