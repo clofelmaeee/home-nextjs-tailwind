@@ -1,4 +1,4 @@
-import styles from "../styles/appssoftware.module.css"
+import styles from "../styles/appSoftware.module.css"
 
 const AppsSoftwareSVG = () => {
     return (

@@ -46,13 +46,6 @@
   transform: translateY(0); 
 }
 
-.page-header {
-  background-image: url("../../public/erp.jpg");
-  max-width: auto;
-  min-height: auto;
-  padding: 30px 15px 30px 15px;
-  margin-top: 70px;
-} 
 
 .block-clients {
   display: flex;

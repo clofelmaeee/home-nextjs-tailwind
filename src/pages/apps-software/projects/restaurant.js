@@ -1,10 +1,12 @@
 import Image from "next/image";
-import projects from "../../../../static-data/projects";
-import styles from "../../../styles/projects.module.css"
+import Link from "next/link";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Link from "next/link";
+import styles from "../../../styles/projects.module.css"
+import projects from "../../../../static-data/projects";
+import stylesApp from "../../../styles/appSoftware.module.css"
+import AppsSoftwareSVG from "@/components/AppsSoftwareSVG";
 
 const Restaurant = ({ projectsData }) => {
     const settings = {
@@ -18,9 +20,15 @@ const Restaurant = ({ projectsData }) => {
 
     return (
         <div className="apps-software flex flex-col justify-center w-full mx-auto">
-            <div className="page-header w-full">
-                <h2 className="text-[40px] font-semibold text-[#d56503] text-center">{projectsData[0].title} </h2>
-            </div>
+
+            <h2 className={`${stylesApp.pageHeader}`}>
+                <span>
+                    <AppsSoftwareSVG />
+                </span>
+                {projectsData[0].title}
+
+            </h2>
+
             <section className="flex flex-col pt-[60px]">
                 <div className="container flex flex-col mx-auto max-w-[1140px]">
                     <div className="frame-container absolute flex space-x-5" style={{ width: "auto", height: "auto" }}>
