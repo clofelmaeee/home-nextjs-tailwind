@@ -11,9 +11,6 @@ const HomeContent = ({ home }) => {
     const clients = home.blocks[3]
     const contact = home.blocks[4]
 
-
-
-    //  console.log(clients)
     const settings = {
         rows: 2,
         dots: true,
@@ -22,9 +19,9 @@ const HomeContent = ({ home }) => {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 6
-
-
     };
+
+    
     return (
         <div className='homepage-content'>
             <section className={`block-banner h-screen  ${styles.customBg}`}>

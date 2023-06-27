@@ -1,5 +1,6 @@
 .customBg {
   background-image: url(/homepage/bg-img.jpg);
+  background-repeat: no-repeat
 }
 
 .slider-wrapper {
